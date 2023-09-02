@@ -25,3 +25,6 @@ spawnpoint 's_m_m_pilot_01' { x = -933.5282, y = -2969.0061, z = 13.9451 }
 ## Socials
 Joina my new discord server for support and updates
 https://discord.gg/TJCKedg8SB
+
+# Visitor Count
+  <img src="https://profile-counter.glitch.me/vulix-load/count.svg" />
