@@ -27,4 +27,4 @@ Joina my new discord server for support and updates
 https://discord.gg/TJCKedg8SB
 
 # Visitor Count
-  <img src="https://profile-counter.glitch.me/vulix-load/count.svg" />
+  <img src="https://profile-counter.glitch.me/fivem-flight-game/count.svg" />
