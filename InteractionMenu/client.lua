@@ -19,15 +19,15 @@ NoPlaneMenus.shamal = NativeUI.CreateItem('Shamal', spawnplane)
 NoPlaneMenus.so13 = NativeUI.CreateItem('2014 Charger', spawnplane)
 
 NorwegianPlaneMenu:AddItem(NoPlaneMenus.shamal)
-NorwegianPlaneMenu:AddItem(NoPlaneMenus.so13)
+NorwegianPlaneMenu:AddItem(NoPlaneMenus.shamal2)
 
 NorwegianPlaneMenu.OnItemSelect = function(sender, item, index)
     if item == NoPlaneMenus.shamal then
         deleteVeh()
         spawnVehicle('shamal', 'Shamal')
-    elseif item == NoPlaneMenus.so13 then
+    elseif item == NoPlaneMenus.shamal2 then
         deleteVeh()
-        spawnVehicle('so13', '2014 Charger')
+        spawnVehicle('shamal2', 'Shamal 2')
     end
 end
 
