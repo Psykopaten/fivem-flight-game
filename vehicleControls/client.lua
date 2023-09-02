@@ -1,11 +1,11 @@
 local engineStarted = false
 local engineStartTimer = 0
-local engineStartDuration = 1000 -- 2 seconds in milliseconds
+local engineStartDuration = 1000
 local notificationVisible = false
 local canToggleEngine = true
 local vehicleStopped = false
 local stopEngineTimer = 0
-local stopEngineDuration = 1000 -- 5 seconds in milliseconds
+local stopEngineDuration = 1000
 
 Citizen.CreateThread(function()
     while true do
@@ -19,7 +19,7 @@ Citizen.CreateThread(function()
                     DisplayHelpText("Hold ~INPUT_CONTEXT~ to start the engine.")
                     notificationVisible = true
                 end
-                if IsControlJustPressed(0, 38) then -- 'E' key
+                if IsControlJustPressed(0, 38) then
                     if canToggleEngine then
                         engineStartTimer = GetGameTimer()
                     end
@@ -35,7 +35,7 @@ Citizen.CreateThread(function()
                 if vehicleStopped then
                     if engineStarted then
                     DisplayHelpText("Hold ~INPUT_CONTEXT~ to turn off the engine.")
-                        if IsControlPressed(0, 38) then -- 'E' key
+                        if IsControlPressed(0, 38) then
                             if stopEngineTimer == 0 then
                                 stopEngineTimer = GetGameTimer()
                             elseif GetGameTimer() - stopEngineTimer >= stopEngineDuration then
@@ -57,7 +57,7 @@ Citizen.CreateThread(function()
         end
         
         if engineStartTimer > 0 then
-            if IsControlPressed(0, 38) then -- 'E' key
+            if IsControlPressed(0, 38) then
                 if GetGameTimer() - engineStartTimer >= engineStartDuration then
                     engineStarted = not engineStarted
                     if engineStarted then
@@ -68,7 +68,7 @@ Citizen.CreateThread(function()
                         DisplayHelpText("Engine stopped.")
                     end
                     canToggleEngine = false
-                    Citizen.Wait(1000) -- Wait for 1 second
+                    Citizen.Wait(1000)
                     canToggleEngine = true
                 end
             else
