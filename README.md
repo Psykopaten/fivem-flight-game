@@ -1,5 +1,5 @@
 # fivem-flight-game (WIP)
-Simple FiveM Flight Simulator with simple plane UI.
+FiveM Flight Simulator with plane UI.
 
 <img alt="Coming in next update" src="https://github.com/Psykopaten/fivem-flight-game/assets/104300989/f450b0f9-9eee-43fa-8a23-9b2c21e570ca">
 
